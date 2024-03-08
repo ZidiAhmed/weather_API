@@ -1,0 +1,132 @@
+/* Importing fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@300&display=swap');
+
+/* Global styling for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-image: url("public/img/bg1.jpg");
+  min-height: 92vh;
+  overflow: auto;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+/* Header styling */
+.header h4 {
+  color: #da1e4e;
+  font-weight: 700;
+  font-size: 2.4rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+/* Main application container styling */
+.app-main {
+  min-height: 10vh;
+  width: 30vw;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  border-radius: 15px;
+  /* Change background color to Apple light gray */
+  background: #f4f4f4;
+}
+
+/* Styling for immediate children of .app-main */
+.app-main > * {
+  margin-bottom: 20px;
+}
+
+/* Styling for input box */
+.input-box {
+  width: 100%;
+  background: azure;
+  color: #e4603a;
+  font-weight: 500;
+  border: none;
+  font-size: 1.7rem;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  outline: none;
+  border: none;
+}
+
+/* Styling for weather body */
+.weather-body {
+  color: #fff;
+  padding: 20px;
+  line-height: 2rem;
+  border-radius: 10px;
+  background-color: #eff1f3;
+  display: none;
+  /* Gradient background */
+  background: linear-gradient(to top, #da1e4e, #e4603a);
+}
+
+/* Styling for location details */
+.location-deatils {
+  font-weight: bold;
+}
+
+/* Styling for weather status */
+.weather-status {
+  padding: 20px;
+}
+
+/* Styling for temperature */
+.temp {
+  font-size: 5rem;
+  font-weight: 700;
+  margin-bottom: 20px 0px;
+  text-shadow: 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for general weather information */
+.weather {
+  margin-top: 25px;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+/* Styling for min-max temperature */
+.min-max {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-top: 15px;
+}
+
+/* Styling for day details */
+.day_details {
+  padding: 20px;
+}
+
+/* Styling for sun detail and basic information */
+.sun-detail,
+.basic {
+  font-size: 1rem;
+}
+
+/* Styling for weather icon */
+#weather-icon {
+  color: black;
+}
+
+/* Media query for responsive design */
+@media screen and (max-width: 800px) {
+  .app-main {
+    width: 95%;
+    padding: 10px;
+  }
+  body {
+    min-height: 94vh;
+  }
+}
